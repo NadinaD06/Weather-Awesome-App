@@ -1,0 +1,72 @@
+.form-center {
+	margin: 20px;
+	text-align: center;
+	color: rgb(102, 117, 132);
+}
+h1 {
+	color: rgb(244, 248, 252);
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	text-align: left;
+}
+h2 {
+	color: rgb(244, 248, 252);
+	font-family: "Roboto", sans-serif;
+	font-size: 80px;
+	float: right;
+	margin-right: 15px;
+	display: inline-block;
+	margin: 8px;
+}
+
+#units {
+	color: rgb(244, 248, 252);
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	text-align: right;
+}
+
+#divider {
+	color: rgb(244, 248, 252);
+}
+
+a {
+	color: rgb(244, 248, 252);
+	text-decoration: none;
+}
+
+p {
+	color: rgb(244, 248, 252);
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	margin: 8px;
+	text-align: left;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+ul {
+	color: rgb(244, 248, 252);
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	list-style: none;
+	text-align: left;
+	padding-left: 2px;
+	margin: 0px;
+}
+
+.button {
+	color: rgb(102, 117, 132);
+}
+
+.weather-app-wrapper {
+	padding: 20px;
+	max-width: 800px;
+	margin: 30px auto;
+	border: 1px solid rgb(112, 128, 144);
+	border-radius: 40px;
+	background: rgb(151, 163, 175);
+}
+h2,
+p {
+	vertical-align: bottom;
+}
