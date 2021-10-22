@@ -10,13 +10,11 @@ h1 {
 	text-align: left;
 }
 h2 {
-	color: rgb(244, 248, 252);
-	font-family: "Roboto", sans-serif;
-	font-size: 80px;
-	float: right;
-	margin-right: 15px;
-	display: inline-block;
-	margin: 8px;
+  color: rgb(244, 248, 252);
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  margin-right: 15px;
+  margin: 8px;
 }
 
 #units {
