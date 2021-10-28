@@ -22,6 +22,48 @@ function showCurrentTime() {
   }
   return `${weekDay} ${hour}:${minute}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row`;
+  forecastHTML = forecastHTML + `
+<div class="col-2">
+  <div class="weather-forecast-date">
+    Mon
+    </div>
+  <img src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png"
+alt=""
+width="42"     
+/>
+<div class="weather-forecast-temperatures">
+<span class="weather-forecast-temperature-max">
+ 18° 
+ <span class="weather-forecast-temperature-min">
+   12°
+ </span>
+    </div>
+</div>`;
+  forecastHTML = forecastHTML = `
+<div class="col-2">
+  <div class="weather-forecast-date">
+    Mon
+    </div>
+  <img src="https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-02-1024.png"
+alt=""
+width="42"     
+/>
+<div class="weather-forecast-temperatures">
+<span class="weather-forecast-temperature-max">
+ 18° 
+ <span class="weather-forecast-temperature-min">
+   12°
+ </span>
+    </div>
+</div>
+`
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function showCityAndTemp(response) {
   console.log(response.data);
@@ -41,6 +83,7 @@ function showCityAndTemp(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
 }
 
 function accessCity(event) {
@@ -76,3 +119,5 @@ showCelsius.addEventListener("click", convertToCelsius);
 
 let showFahrenheit = document.querySelector("#Fahrenheit");
 showFahrenheit.addEventListener("click", convertToFahrenheit);
+
+displayForecast();
