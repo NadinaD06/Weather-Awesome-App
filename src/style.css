@@ -76,12 +76,29 @@ p {
 div {
 	color: rgb(244, 248, 252);
 }
+.weather-forecast {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
 .weather-forecast-date {
 	font-size: 16px;
 	color: white;
+	opacity: 0.6;
+}
+.weather-forecast-temperature-min {
+	color:white;
+	opacity: 0.7;
+}
+.weather-forecast-temperatures {
+	font-size: 13px;
 }
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+small {
+	color: rgb(102, 117, 132);
 }
