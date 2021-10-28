@@ -76,29 +76,3 @@ showCelsius.addEventListener("click", convertToCelsius);
 
 let showFahrenheit = document.querySelector("#Fahrenheit");
 showFahrenheit.addEventListener("click", convertToFahrenheit);
-
-dailyForecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
-      forecastHTML =
-        forecastHTML +
-        `
-            <div class="col-2">
-              <div class="weekday">${formatForecastDay(forecastDay.dt)}</div>
-              <img
-                src="https://openweathermap.org/img/wn/${
-                  forecastDay.weather[0].icon
-                }@2x.png" height="60px" width="60px"
-              />
-              <span class="highest-temperature">${Math.round(
-                forecastDay.temp.max
-              )}°</span>
-              <span class="lowest-temperature">${Math.round(
-                forecastDay.temp.min
-              )}°</span>
-            </div>`;
-    }
-  });
-
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
-
