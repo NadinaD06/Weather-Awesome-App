@@ -30,7 +30,7 @@ ul {
 li {
   list-style: none;
   line-height: 1.5;
-  color: white;
+  color:white;
   font-weight: bold;
 }
 
@@ -70,7 +70,7 @@ button:hover {
   margin-top: 80px;
   padding: 10px;
   color: white;
-  background-image: url("https://th.bing.com/th/id/R.555879d7f1ba4b2438f67ece2ad50b51?rik=p96xkVENVPnJNA&pid=ImgRaw&r=0");
+  background-image: url("https://lh6.googleusercontent.com/proxy/qJ3nQvOwCXHsIdEi_LXACaBOK7dCd8YRojvGXR-1bZjfFfcZk8ohT95aLqhC9dW3GNAEy5X32I6L-UP4nFp9yj41BlnySQuEkGeaHlPjk1mn3hXhrStYwpe2yf7g3j8ik8G5fMBK_0rRa2iQvTqP0tk=s0-d");
   background-size: cover;
 }
 
@@ -84,7 +84,6 @@ button:hover {
 .current-temperature strong {
   font-size: 64px;
   line-height: 1;
-  color: white;
 }
 
 #celsius {
