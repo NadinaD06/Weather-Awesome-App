@@ -1,104 +1,147 @@
-.form-center {
-	margin: 20px;
-	text-align: center;
-	color: rgb(102, 117, 132);
+html,
+body {
+  margin-bottom: 0;
+  height: 100%;
+  font-family: "Noto Sans Mono", monospace;
 }
+
+.big-container {
+   background-image: url("");
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 h1 {
-	color: rgb(244, 248, 252);
-	font-family: "Roboto", sans-serif;
-	font-size: 28px;
-	text-align: left;
-}
-h2 {
-	color: rgb(244, 248, 252);
-	font-family: "Roboto", sans-serif;
-	font-size: 100px;
-	float: right;
-	margin-right: 10px;
-	display: inline-block;
-	margin: 20px;
-}
-
-#units {
-	color: rgb(244, 248, 252);
-	font-family: "Roboto", sans-serif;
-	font-size: 20px;
-	text-align: right;
-}
-
-#divider {
-	color: rgb(244, 248, 252);
-}
-
-a {
-	color: rgb(102, 117, 132);
-	text-decoration: none;
-}
-
-p {
-	color: rgb(244, 248, 252);
-	font-family: "Roboto", sans-serif;
-	font-size: 15px;
-	margin: 4px;
-	text-align: left;
-	white-space: nowrap;
-	overflow-x: auto;
+  text-align: left;
+  line-height: 40px;
+  color:white;
+  font-weight: bold;
 }
 ul {
-	color: rgb(244, 248, 252);
-	font-family: "Roboto", sans-serif;
-	font-size: 15px;
-	list-style: none;
-	text-align: left;
-	padding-left: 2px;
-	margin: 0px;
-}
-
-.button {
-	color: rgb(102, 117, 132);
-	padding: 5px;
-	border-radius: 40px;
-}
-
-.weather-app-wrapper {
-	padding: 20px;
-	max-width: 500px;
-	margin: 30px auto;
-	border: 1px solid rgb(112, 128, 144);
-	border-radius: 40px;
-	background: rgb(151, 163, 175);
-}
-h2,
-p {
-	vertical-align: bottom;
-}
-
-div {
-	color: rgb(244, 248, 252);
-}
-.weather-forecast {
-	margin-top: 20px;
-	text-align: center;
-	font-size: 16px;
-	color: white;
-}
-.weather-forecast-date {
-	font-size: 16px;
-	color: white;
-	opacity: 0.6;
-}
-.weather-forecast-temperature-min {
-	color:white;
-	opacity: 0.7;
-}
-.weather-forecast-temperatures {
-	font-size: 13px;
-}
-ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+li {
+  list-style: none;
+  line-height: 1.5;
+  color: white;
+}
+
 small {
-	color: rgb(102, 117, 132);
+  display: block;
+  text-align: center;
+  color: black;
+}
+
+small a {
+  text-decoration: none;
+  color: rgb(172, 147, 201);
+}
+button {
+  float: right;
+  margin-top: -65px;
+  border-radius: 10px;
+
+  font-size: 20px;
+  transition: all 200ms ease-in-out;
+  border-color: rgb(172, 147, 201);
+  color: rgb(172, 147, 201);
+  background-color: white;
+}
+
+button:hover {
+  background-color: rgb(172, 147, 201);
+  color: white;
+}
+
+.weather-app-box {
+  border: solid;
+  border-color: rgb(172, 147, 201);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 30px auto;
+  margin-top: 80px;
+  padding: 10px;
+  color: white;
+  background-image: url("https://th.bing.com/th/id/OIP.dQeiJLeZjMgsHIHmxsgWpAHaNE?pid=ImgDet&rs=1");
+  background-size: contain;
+}
+
+.current-temperature img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.current-temperature strong {
+  font-size: 64px;
+  line-height: 1;
+}
+
+#celsius {
+  position: relative;
+  font-size: 16px;
+  top: -35px;
+  font-weight: bold;
+}
+
+#weather-description:first-letter {
+  text-transform: capitalize;
+}
+#weather-description {
+	font-weight: bold;
+}
+#search-city-form {
+  font-size: 20px;
+  text-align: left;
+  padding: 30px;
+  color: rgb(172, 147, 201);
+
+}
+
+#city-input {
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(172, 147, 201);
+}
+#search-button {
+  border-radius: 10px;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+  border-color: rgb(172, 147, 201);
+  background-color: white;
+  color: rgb(172, 147, 201);
+}
+
+#search-button:hover {
+  background-color:rgb(172, 147, 201);
+  color: white;
+}
+
+.current-temperature .active {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.lowest-temperature {
+  color: rgb(254, 178, 165);
+}
+
+#last-updated {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
 }
