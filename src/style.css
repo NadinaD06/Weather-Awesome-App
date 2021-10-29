@@ -31,6 +31,7 @@ li {
   list-style: none;
   line-height: 1.5;
   color: white;
+  font-weight: bold;
 }
 
 small {
@@ -69,8 +70,8 @@ button:hover {
   margin-top: 80px;
   padding: 10px;
   color: white;
-  background-image: url("https://th.bing.com/th/id/OIP.dQeiJLeZjMgsHIHmxsgWpAHaNE?pid=ImgDet&rs=1");
-  background-size: contain;
+  background-image: url("https://th.bing.com/th/id/R.555879d7f1ba4b2438f67ece2ad50b51?rik=p96xkVENVPnJNA&pid=ImgRaw&r=0");
+  background-size: cover;
 }
 
 .current-temperature img {
@@ -83,6 +84,7 @@ button:hover {
 .current-temperature strong {
   font-size: 64px;
   line-height: 1;
+  color: white;
 }
 
 #celsius {
