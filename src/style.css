@@ -6,7 +6,7 @@ body {
 }
 
 .big-container {
-   background-image: url("");
+   background-color: white ;
   position: fixed;
   top: 0;
   left: 0;
@@ -103,6 +103,7 @@ button:hover {
   text-align: left;
   padding: 30px;
   color: rgb(172, 147, 201);
+  border-color: rgb(172, 147, 201);
 
 }
 
